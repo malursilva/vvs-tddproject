@@ -16,5 +16,8 @@
   },
   "homepage": "https://github.com/malursilva/vvs-tddproject#readme",
   "keywords": [],
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "git-commit-msg-linter": "^3.2.6"
+  }
 }
