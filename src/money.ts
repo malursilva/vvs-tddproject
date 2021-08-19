@@ -26,12 +26,12 @@ export class Money implements Expression {
         return this._amount === other._amount
     }
 
-    times (multiplier: number): Money {
+    times (multiplier: number): Expression {
         return new Money(this._amount * multiplier, this._currency)
     }
 
-    plus (addend: Money): Expression {
-        return new Sum(this,addend)
+    plus (addend: Expression): Expression {
+        return new Sum(this, addend)
     }
 
     reduce (bank: Bank, to: string): Money {
