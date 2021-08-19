@@ -1,5 +1,6 @@
+import { Bank } from './bank'
 import { Money } from './money'
 
-export class Expression {
-    reduce: (to: string) => Money
+export interface Expression {
+    reduce: (bank: Bank, to: string) => Money
 }
